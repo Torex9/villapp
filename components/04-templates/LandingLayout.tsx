@@ -24,7 +24,7 @@ export const LandingLayout: React.FC<PropsWithChildren<LandingLayoutProps>> = (
 ) => {
   return (
     <>
-      <div className="flex min-h-screen flex-col">
+      <div className="flex min-h-screen flex-col ">
         <Header nav={MainNavigation} />
         {props.hero && (
           <Hero>

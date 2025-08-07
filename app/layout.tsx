@@ -29,11 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <LandingLayout
-          hero={{ title: "test", CTA: { text: "Click me", url: "#" } }}
-        >
-          {children}
-        </LandingLayout>
+        {children}
       </body>
     </html>
   );
