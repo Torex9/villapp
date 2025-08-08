@@ -41,7 +41,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
       >
-        <div className="backdrop-blur-xs fixed inset-0 z-20 bg-alpha-dark-800/80"></div>
+        <div className="backdrop-blur-xs fixed inset-0 z-30 bg-alpha-dark-800/80"></div>
       </Transition>
 
       <Transition
@@ -55,7 +55,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({
       >
         <PopoverPanel
           className={`
-            fixed right-0 z-20 flex shadow-md transition-all duration-500 ease-out
+            fixed right-0 z-40 flex shadow-md transition-all duration-500 ease-out
             ${
               isScrolled
                 ? "top-4 mr-4 mt-16 rounded-2xl h-[calc(100vh-5rem)] w-[85vw] max-w-[24rem]"

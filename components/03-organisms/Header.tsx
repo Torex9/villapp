@@ -35,7 +35,7 @@ export const Header: React.FC<HeaderProps> = ({ nav }) => {
         <>
           <header
             className={`
-              fixed z-50 transition-all duration-500 ease-out translate-y-0
+              fixed z-50 transition-all duration-500 ease-out translate-y-0 bg-[#f4f3e1]
               ${
                 isScrolled
                   ? "top-4 left-4 right-4 rounded-2xl bg-white/40 backdrop-blur-2xl border border-white/30 shadow-2xl backdrop-saturate-150"
