@@ -11,6 +11,8 @@
   "dependencies": {
     "@headlessui/react": "^2.2.7",
     "clsx": "^2.1.1",
+    "google-auth-library": "^10.2.1",
+    "google-spreadsheet": "^5.0.2",
     "lodash": "^4.17.21",
     "lucide-react": "^0.537.0",
     "mini-svg-data-uri": "^1.4.4",
