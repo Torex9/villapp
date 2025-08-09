@@ -117,7 +117,7 @@ export default function FAQPage() {
                   and we&apos;ll get back to you as soon as possible!
                 </p>
                 <a
-                  href="mailto:info@getontrck.com"
+                  href="mailto:arcanuscontracting@gmail.com"
                   className="inline-block bg-[#ed5a2e] text-white px-5 py-2 rounded-lg font-medium hover:opacity-90 transition cursor-pointer"
                 >
                   Send email
