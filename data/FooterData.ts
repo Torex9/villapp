@@ -100,18 +100,18 @@ export const footerData: FooterData = {
             links: [
                 {
                     label: "About Us",
-                    href: "/#about-us",
-                    className: "text-gray-400",
+                    href: "/about-us",
+                    className: "text-gray-400 hover:text-[#ed5a2e] transition-colors duration-300",
                 },
                 {
                     label: "How We Work",
                     href: "/#how-we-work",
-                    className: "text-gray-400",
+                    className: "text-gray-400 hover:text-[#ed5a2e] transition-colors duration-300",
                 },
                 {
                     label: "Features",
                     href: "/#features",
-                    className: "text-gray-400",
+                    className: "text-gray-400 hover:text-[#ed5a2e] transition-colors duration-300",
                 },
             ],
         },
@@ -121,17 +121,17 @@ export const footerData: FooterData = {
                 {
                     label: "Privacy policy",
                     href: "/legal/privacy-policy",
-                    className: "text-gray-400",
+                    className: "text-gray-400 hover:text-[#ed5a2e] transition-colors duration-300",
                 },
                 {
                     label: "Terms of service",
                     href: "/legal/terms-of-service",
-                    className: "text-gray-400",
+                    className: "text-gray-400 hover:text-[#ed5a2e] transition-colors duration-300",
                 },
                 {
                     label: "Acceptable use policy",
                     href: "/legal/acceptable-use-policy",
-                    className: "text-gray-400",
+                    className: "text-gray-400 hover:text-[#ed5a2e] transition-colors duration-300",
                 },
             ],
         },
@@ -141,7 +141,7 @@ export const footerData: FooterData = {
                 {
                     label: "FAQ",
                     href: "/faq",
-                    className: "text-gray-400",
+                    className: "text-gray-400 hover:text-[#ed5a2e] transition-colors duration-300",
                 },
             ],
         },

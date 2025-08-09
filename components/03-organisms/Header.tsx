@@ -39,13 +39,13 @@ export const Header: React.FC<HeaderProps> = ({ nav }) => {
               ${
                 isScrolled
                   ? "top-4 left-4 right-4 rounded-2xl bg-white/40 backdrop-blur-2xl border border-white/30 shadow-2xl backdrop-saturate-150"
-                  : "top-0 left-0 right-0 bg-[#f4f3e1]"
+                  : "top-0 left-0 right-0 bg-transparent"
               }
             `}
           >
             <Container className="flex items-center justify-between gap-6 py-4">
               <Link href="/">
-                <Logo />
+                <Logo color="#ed5a2e" />
               </Link>
 
               <div className="hidden lg:block">
@@ -63,7 +63,7 @@ export const Header: React.FC<HeaderProps> = ({ nav }) => {
               </div>
 
               <div className="py-3 lg:hidden">
-                <Popover.Button className="flex aspect-square w-12 shrink-0 items-center justify-center text-black duration-150 hover:text-gray-700 relative">
+                <Popover.Button className="flex aspect-square w-12 shrink-0 items-center justify-center text-[#ed5a2e] duration-150 hover:text-[#d54d26] relative">
                   <div
                     className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${
                       open ? "rotate-180 opacity-0" : "rotate-0 opacity-100"

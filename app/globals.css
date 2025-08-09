@@ -55,3 +55,73 @@ body {
 .animate-marquee {
   animation: marquee 25s linear infinite;
 }
+
+/* Custom scrollbar styling for team carousel */
+.team-carousel {
+  /* Firefox scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: #ed5a2e rgba(255, 255, 255, 0.3);
+
+  /* Ensure scrollbar area is always present */
+  padding-bottom: 12px;
+
+  /* Mobile scroll behavior */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Desktop scrollbar styling */
+@media (min-width: 1025px) {
+  .team-carousel::-webkit-scrollbar {
+    height: 8px;
+    -webkit-appearance: none;
+  }
+
+  .team-carousel::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+
+  .team-carousel::-webkit-scrollbar-thumb {
+    background: #ed5a2e;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+
+  .team-carousel::-webkit-scrollbar-thumb:hover {
+    background: #d54d26;
+  }
+}
+
+/* Mobile: Create a custom scroll indicator */
+@media (max-width: 1024px) {
+  .team-carousel {
+    position: relative;
+  }
+
+  /* Custom scroll indicator for mobile */
+  .team-carousel::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: rgba(237, 90, 46, 0.4);
+    border-radius: 2px;
+    pointer-events: none;
+  }
+
+  /* Force webkit scrollbar on mobile (may work on some devices) */
+  .team-carousel::-webkit-scrollbar {
+    height: 6px !important;
+    -webkit-appearance: none !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .team-carousel::-webkit-scrollbar-thumb {
+    background: #ed5a2e !important;
+    border-radius: 3px !important;
+    border: none !important;
+  }
+}

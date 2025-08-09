@@ -86,7 +86,7 @@ export default function Home() {
         </div>
 
         {/* Newsletter Signup Section */}
-        <div className="py-16 bg-white dark:bg-black/95">
+        <div id="waitlist" className="py-16 bg-white dark:bg-black/95">
           <NewsletterSignup
             title="Stay Informed Before We Go Live"
             subtitle="We are coming to your city soon"

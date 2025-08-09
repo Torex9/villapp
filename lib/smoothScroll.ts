@@ -21,13 +21,19 @@ export const handleSmoothScroll = (
     } else if (href.startsWith('/#')) {
         // Handle root hash links (e.g., /#about-us)
         const targetId = href.substring(2);
-        const targetElement = document.getElementById(targetId);
 
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+        // Check if we're already on the homepage
+        if (window.location.pathname === '/') {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        } else {
+            // Navigate to homepage with hash
+            window.location.href = href;
         }
     } else {
         // For external links or non-hash links, navigate normally
@@ -58,13 +64,19 @@ export const handleSmoothScrollWithDelay = (
             }
         } else if (href.startsWith('/#')) {
             const targetId = href.substring(2);
-            const targetElement = document.getElementById(targetId);
 
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+            // Check if we're already on the homepage
+            if (window.location.pathname === '/') {
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            } else {
+                // Navigate to homepage with hash
+                window.location.href = href;
             }
         } else {
             window.location.href = href;

@@ -9,6 +9,8 @@ export interface NewsletterSignupProps {
   subtitle?: string;
   buttonText?: string;
   placeholder?: string;
+  buttonColor?: string;
+  buttonHoverColor?: string;
 }
 
 export const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
@@ -17,6 +19,8 @@ export const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
   subtitle = "We are coming to your city soon",
   buttonText = "Get on Track",
   placeholder = "Enter Your Email Address",
+  buttonColor = "bg-black hover:bg-gray-800",
+  buttonHoverColor,
 }) => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -99,8 +103,9 @@ export const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
               className={cn(
                 "text-white flex items-center justify-center rounded-full px-5 py-2",
                 "w-full mx-auto lg:mx-3 mt-3 lg:mt-0 transition-all duration-200",
-                "disabled:opacity-60 cursor-pointer bg-black hover:bg-gray-800",
-                "disabled:cursor-not-allowed"
+                "disabled:opacity-60 cursor-pointer",
+                "disabled:cursor-not-allowed",
+                buttonColor
               )}
             >
               {isSubmitting ? "Submitting..." : buttonText}

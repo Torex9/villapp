@@ -70,7 +70,7 @@ export const Navigation: React.FC<NavigationProps> = ({ nav }) => {
                   "outline-bravo | relative z-20 block px-4 py-2 font-bold duration-300 transition-all rounded-full",
                   hoveredItem === item.name
                     ? "text-[#ed5a2e]"
-                    : "text-alpha-dark-800 dark:text-black hover:text-[#ed5a2e]"
+                    : "text-alpha-dark-800 dark:text-[#ed5a2e] hover:text-[#ed5a2e]"
                 )}
               >
                 {item.name}

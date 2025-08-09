@@ -1,15 +1,15 @@
 export const MainNavigation = [
   {
     name: 'About Us',
-    url: '#about-us'
+    url: '/about-us'
   },
   {
     name: 'How We Work',
-    url: '#how-we-work'
+    url: '/#how-we-work'
   },
   {
     name: 'Features',
-    url: '#features'
+    url: '/#features'
   }
 ];
 
