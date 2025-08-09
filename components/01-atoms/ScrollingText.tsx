@@ -58,7 +58,7 @@ export const ScrollingText: React.FC<ScrollingTextProps> = ({
       >
         <span
           className={cn(
-            "mx-4 text-4xl lg:text-8xl md:text-5xl font-bold text-gray-100 dark:text-white/30",
+            "mx-4 text-4xl lg:text-8xl md:text-5xl font-bold text-red-100 dark:text-white/30",
             textClassName
           )}
         >

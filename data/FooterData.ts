@@ -100,12 +100,12 @@ export const footerData: FooterData = {
             links: [
                 {
                     label: "About Us",
-                    href: "/about",
+                    href: "/#about-us",
                     className: "text-gray-400",
                 },
                 {
-                    label: "How it works",
-                    href: "/#works",
+                    label: "How We Work",
+                    href: "/#how-we-work",
                     className: "text-gray-400",
                 },
                 {

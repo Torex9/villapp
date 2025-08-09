@@ -4,7 +4,7 @@ interface FeatureGridProps {
 
 export function FeatureGrid({ className = "" }: FeatureGridProps) {
   return (
-    <div className={`py-16 ${className}`}>
+    <div id="how-we-work" className={`py-16 ${className}`}>
       {/* Hero Section */}
       <section className="w-full px-4 sm:px-6 lg:px-12 pt-16 max-w-screen-xl mx-auto">
         <div className="text-center mb-10 space-y-4">

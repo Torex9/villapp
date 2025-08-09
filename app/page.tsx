@@ -33,17 +33,14 @@ export default function Home() {
         }}
       >
         {/* Feature Grid Section */}
-        <FeatureGrid className="bg-black" />
+        <FeatureGrid className="dark:bg-black bg-white" />
 
         {/* Carousel Section */}
-        <div className="py-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Discover Amazing Experiences
+        <div id="features" className="py-16 dark:bg-black/90">
+          <div className="text-left mb-12 ml-12">
+            <h2 className="text-6xl font-extrabold dark:text-white text-gray-900 mb-4">
+              What You Get
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explore what's waiting for you in your city
-            </p>
           </div>
 
           <CarouselSkeleton
@@ -59,13 +56,15 @@ export default function Home() {
           />
         </div>
 
-        {/* Never Miss A Moment Section */}
-        <NeverMissAMoment />
+        <div className="bg-black/90">
+          {/* Never Miss A Moment Section */}
+          <NeverMissAMoment />
+        </div>
 
         <Colleagues />
 
         {/* Scrolling Text Section */}
-        <div className="py-16 bg-black/95 backdrop-blur-sm">
+        <div className="py-16 bg-white dark:bg-black/95 dark:backdrop-blur-sm">
           <ScrollingText
             text={[
               "React.js",
@@ -81,13 +80,13 @@ export default function Home() {
             ]}
             direction="left"
             speed="slow"
-            className="text-white text-4xl md:text-6xl font-bold"
-            textClassName="text-white/90"
+            className="text-gray-900 dark:text-white text-4xl md:text-6xl font-bold"
+            textClassName="text-gray-200 dark:text-white/90"
           />
         </div>
 
         {/* Newsletter Signup Section */}
-        <div className="py-16 bg-black/95">
+        <div className="py-16 bg-white dark:bg-black/95">
           <NewsletterSignup
             title="Stay Informed Before We Go Live"
             subtitle="We are coming to your city soon"

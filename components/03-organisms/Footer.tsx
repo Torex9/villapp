@@ -1,7 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { footerData } from "../../data/FooterData";
+import { handleSmoothScroll } from "../../lib/smoothScroll";
 
 export interface FooterProps {}
 
@@ -18,6 +21,7 @@ export const Footer: React.FC<FooterProps> = () => {
         <Link
           className="flex justify-center items-center mx-auto gap-4 mt-10"
           href={cta.appStoreHref}
+          onClick={(e) => handleSmoothScroll(e, cta.appStoreHref)}
         >
           {cta.buttons.map((button) => (
             <Image
@@ -81,7 +85,11 @@ export const Footer: React.FC<FooterProps> = () => {
                   key={link.label}
                   className="cursor-pointer text-xs md:text-sm"
                 >
-                  <Link href={link.href} className={link.className}>
+                  <Link
+                    href={link.href}
+                    className={link.className}
+                    onClick={(e) => handleSmoothScroll(e, link.href)}
+                  >
                     {link.label}
                   </Link>
                 </li>

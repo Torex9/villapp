@@ -1,33 +1,15 @@
 export const MainNavigation = [
   {
-    name: 'Home',
-    url: '#'
+    name: 'About Us',
+    url: '#about-us'
   },
   {
-    name: 'About',
-    url: '#',
-    children: [
-      {
-        name: 'Who we are',
-        url: '#'
-      },
-      {
-        name: 'What we do',
-        url: '#'
-      }
-    ]
+    name: 'How We Work',
+    url: '#how-we-work'
   },
   {
-    name: 'FAQ',
-    url: '#'
-  },
-  {
-    name: 'Pricing',
-    url: '#'
-  },
-  {
-    name: 'Contact',
-    url: '#'
+    name: 'Features',
+    url: '#features'
   }
 ];
 

@@ -95,25 +95,21 @@ export const InfiniteMovingCards = ({
         ref={scrollerRef}
         className={cn(
           "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
-          start && "animate-scroll"
+          start && "animate-scroll",
+          pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="relative w-[90vw] max-w-full flex-shrink-0 rounded-3xl border border-b-0 border-slate-800 p-5 md:w-[60vw] md:p-16"
-            style={{
-              background: "rgb(4,7,29)",
-              backgroundColor:
-                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-            }}
+            className="relative w-[90vw] max-w-full shrink-0 rounded-2xl border border-b-0 border-zinc-200 bg-[linear-gradient(180deg,#fafafa,#f5f5f5)] px-8 py-6 md:w-[35vw] dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]"
             key={idx}
           >
             <blockquote>
               <div
                 aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className="relative z-20 text-sm font-normal leading-[1.6] text-white md:text-lg">
+              <span className="relative z-20 text-sm leading-[1.6] font-bold text-neutral-800 dark:text-gray-100">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
@@ -122,10 +118,10 @@ export const InfiniteMovingCards = ({
                     <img src={item.img} alt="profile" />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <span className="text-xl font-bold leading-[1.6] text-white">
+                    <span className="text-sm leading-[1.6] font-bold text-neutral-500 dark:text-gray-400">
                       {item.name}
                     </span>
-                    <span className="text-sm font-normal leading-[1.6] text-white-200">
+                    <span className="text-sm leading-[1.6] font-bold text-neutral-500 dark:text-gray-400">
                       {item.title}
                     </span>
                   </div>

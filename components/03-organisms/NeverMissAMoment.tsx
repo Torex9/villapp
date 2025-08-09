@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { handleSmoothScroll } from "../../lib/smoothScroll";
 
 interface NeverMissAMomentProps {
   className?: string;
@@ -25,6 +28,7 @@ export function NeverMissAMoment({ className = "" }: NeverMissAMomentProps) {
         </h2>
         <a
           href="#waitlist"
+          onClick={(e) => handleSmoothScroll(e, "#waitlist")}
           className="inline-flex items-center gap-2 text-orange-500 hover:text-orange-600 font-semibold transition ml-5 text-md lg:text-3xl"
         >
           Get on Trck

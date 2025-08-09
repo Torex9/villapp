@@ -50,7 +50,7 @@ export const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
   return (
     <div
       className={cn(
-        "max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 rounded-3xl bg-[#ed5a2e] backdrop-blur-md border border-white/20 shadow-2xl",
+        "mx-4 md:mx-10 px-4 sm:px-6 lg:px-8 rounded-3xl bg-[#ed5a2e] backdrop-blur-md border border-white/20 shadow-2xl",
         "h-[400px] lg:h-[630px] flex flex-col justify-center",
         className
       )}

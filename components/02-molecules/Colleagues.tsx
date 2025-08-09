@@ -9,7 +9,7 @@ const Colleagues = () => {
 
   return (
     <div
-      className="py-20 bg-black"
+      className="py-20 dark:bg-black bg-white"
       id="testimonials"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
