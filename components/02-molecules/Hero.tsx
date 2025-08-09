@@ -1,7 +1,7 @@
-import Container from "../01-atoms/Container";
 import Image from "next/image";
 import { PropsWithChildren } from "react";
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface HeroProps {}
 
 export const Hero: React.FC<PropsWithChildren<HeroProps>> = (props) => {

@@ -86,7 +86,7 @@ export default function PrivacyPolicy() {
         </p>
 
         <h3 className="text-xl font-semibold text-black dark:text-white mt-8 mb-4">
-          6. Children's Privacy
+          6. Children&apos;s Privacy
         </h3>
         <p>
           Our Services are not intended for children under 13 (or under the age
@@ -105,7 +105,7 @@ export default function PrivacyPolicy() {
           8. Changes to This Policy
         </h3>
         <p>
-          We may update this Privacy Policy. If changes are material, we'll
+          We may update this Privacy Policy. If changes are material, we&apos;ll
           notify you.
         </p>
 

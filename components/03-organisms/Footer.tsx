@@ -6,6 +6,7 @@ import React from "react";
 import { footerData } from "../../data/FooterData";
 import { handleSmoothScroll } from "../../lib/smoothScroll";
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface FooterProps {}
 
 export const Footer: React.FC<FooterProps> = () => {

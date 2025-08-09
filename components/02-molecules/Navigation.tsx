@@ -4,7 +4,6 @@ import { Nav } from "../../types/Nav";
 import { handleSmoothScroll } from "../../lib/smoothScroll";
 import clsx from "clsx";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useState, useRef } from "react";
 
 export interface NavigationProps {
@@ -12,8 +11,8 @@ export interface NavigationProps {
 }
 
 export const Navigation: React.FC<NavigationProps> = ({ nav }) => {
-  const pathname = usePathname();
-  const activeLink = (url: string) => pathname == url;
+  // const pathname = usePathname();
+  // const activeLink = (url: string) => pathname == url;
 
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [hoverStyle, setHoverStyle] = useState({});

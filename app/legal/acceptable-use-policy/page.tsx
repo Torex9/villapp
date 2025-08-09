@@ -8,8 +8,8 @@ export default function AcceptableUsePolicy() {
       </h1>
       <div className="prose prose-blue max-w-none dark:prose-invert text-xs md:text-md lg:text-lg text-gray-700 dark:text-gray-300">
         <p>
-          This Acceptable Use Policy governs your use of TRCK's services and
-          platform.
+          This Acceptable Use Policy governs your use of TRCK&apos;s services
+          and platform.
         </p>
 
         <p>
@@ -64,7 +64,7 @@ export default function AcceptableUsePolicy() {
         <p>When participating in events through our platform:</p>
         <ul className="space-y-2">
           <li>Arrive on time and be prepared</li>
-          <li>Follow the host's instructions and guidelines</li>
+          <li>Follow the host&apos;s instructions and guidelines</li>
           <li>Respect other participants and venue property</li>
           <li>Do not engage in dangerous or reckless behavior</li>
           <li>Report any safety concerns immediately</li>
@@ -73,7 +73,7 @@ export default function AcceptableUsePolicy() {
         <h3 className="text-xl font-semibold text-black dark:text-white mt-8 mb-4">
           5. Host Responsibilities
         </h3>
-        <p>If you're hosting events on our platform, you must:</p>
+        <p>If you&apos;re hosting events on our platform, you must:</p>
         <ul className="space-y-2">
           <li>Provide accurate descriptions of your events</li>
           <li>Ensure the safety of all participants</li>

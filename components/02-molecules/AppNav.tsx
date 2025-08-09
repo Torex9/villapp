@@ -1,9 +1,8 @@
-'use client';
+"use client";
 
-import { appNav } from '../../data/AppNavigation';
-import clsx from 'clsx';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { appNav } from "../../data/AppNavigation";
+import clsx from "clsx";
+import Link from "next/link";
 
 export interface AppNavProps {
   className?: string;
@@ -11,11 +10,11 @@ export interface AppNavProps {
 }
 
 const AppNav: React.FC<AppNavProps> = (props) => {
-  const pathname = usePathname();
-  const isActive = (href: string) => {
-    if (href === '/app' && pathname !== '/app') return false;
-    return pathname.startsWith(href);
-  };
+  // const pathname = usePathname();
+  // const isActive = (href: string) => {
+  //   if (href === '/app' && pathname !== '/app') return false;
+  //   return pathname.startsWith(href);
+  // };
 
   return (
     <nav className={props.className}>
@@ -24,7 +23,7 @@ const AppNav: React.FC<AppNavProps> = (props) => {
           <li key={item.id}>
             <Link
               className={clsx(
-                'block border-t border-alpha-dark-800 p-6 duration-150 hover:bg-alpha-dark-800/80 hover:text-white'
+                "block border-t border-alpha-dark-800 p-6 duration-150 hover:bg-alpha-dark-800/80 hover:text-white"
                 // isActive(item.link) && 'text-white'
               )}
               href={item.link}

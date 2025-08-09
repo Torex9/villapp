@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { userNav } from '../../data/AppNavigation';
-import clsx from 'clsx';
-import { LogOut } from 'lucide-react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { userNav } from "../../data/AppNavigation";
+import clsx from "clsx";
+import { LogOut } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export interface UserNavProps {
   className?: string;
@@ -12,20 +12,20 @@ export interface UserNavProps {
 }
 
 const UserNav: React.FC<UserNavProps> = (props) => {
-  const pathname = usePathname();
-  const isActive = (href: string) => {
-    if (href === '/app' && pathname !== '/app') return false;
-    return pathname.startsWith(href);
-  };
+  // const pathname = usePathname();
+  // // const isActive = (href: string) => {
+  //   if (href === '/app' && pathname !== '/app') return false;
+  //   return pathname.startsWith(href);
+  // };
 
   return (
-    <nav className={clsx('grow', props.className)}>
+    <nav className={clsx("grow", props.className)}>
       <ul className="font-bravo flex h-full flex-col border-t border-t-alpha-dark-800 font-semibold text-alpha-light-100">
         {userNav.map((item) => (
           <li key={item.id}>
             <Link
               className={clsx(
-                'flex w-full items-center gap-3 border-b border-b-alpha-dark-800 p-6 text-left duration-150 hover:bg-alpha-dark-800/60 hover:text-white'
+                "flex w-full items-center gap-3 border-b border-b-alpha-dark-800 p-6 text-left duration-150 hover:bg-alpha-dark-800/60 hover:text-white"
                 // isActive(item.link) && 'text-white'
               )}
               href={item.link}

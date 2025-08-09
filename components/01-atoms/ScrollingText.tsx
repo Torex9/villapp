@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 
 export interface ScrollingTextProps {
   text: string | string[];

@@ -1,7 +1,4 @@
-import { Modal } from "@/components/02-molecules/Modal";
 import { LandingLayout } from "@/components/04-templates/LandingLayout";
-import { Textarea } from "@headlessui/react";
-import Image from "next/image";
 import Colleagues from "@/components/02-molecules/Colleagues";
 import { ScrollingText } from "@/components/01-atoms/ScrollingText";
 import { NewsletterSignup } from "@/components/02-molecules/NewsletterSignup";
@@ -52,8 +49,9 @@ export default function Home() {
             }}
             navigation={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
-            children={slides}
-          />
+          >
+            {slides}
+          </CarouselSkeleton>
         </div>
 
         <div className="bg-black/90">

@@ -1,10 +1,7 @@
 "use client";
 
 import { Nav } from "../../types/Nav";
-import {
-  handleSmoothScrollWithDelay,
-  scrollToElement,
-} from "../../lib/smoothScroll";
+import { handleSmoothScrollWithDelay } from "../../lib/smoothScroll";
 import { PopoverButton, PopoverPanel, Transition } from "@headlessui/react";
 import clsx from "clsx";
 import Link from "next/link";
@@ -20,7 +17,6 @@ export interface MobileNavProps {
 
 export const MobileNav: React.FC<MobileNavProps> = ({
   nav,
-  open,
   isScrolled = false,
   onClose,
 }) => {

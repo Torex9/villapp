@@ -1,6 +1,5 @@
 "use client";
 
-import Button from "../01-atoms/ButtonPrimary";
 import CookieConsentPopup from "../02-molecules/CookieConsentPopup";
 import { Hero } from "../02-molecules/Hero";
 import Footer from "../03-organisms/Footer";

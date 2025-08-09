@@ -113,8 +113,8 @@ export default function FAQPage() {
                   Still have a question?
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Can't find the answer to your question? Send us an email and
-                  we'll get back to you as soon as possible!
+                  Can&apos;t find the answer to your question? Send us an email
+                  and we&apos;ll get back to you as soon as possible!
                 </p>
                 <a
                   href="mailto:info@getontrck.com"

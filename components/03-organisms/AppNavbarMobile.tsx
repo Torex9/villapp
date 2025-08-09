@@ -1,14 +1,13 @@
-'use client';
+"use client";
 
-import Logo from '../01-atoms/Logo';
-import UserBadge from '../01-atoms/UserBadge';
-import AppNav from '../02-molecules/AppNav';
-import SlidePanel from '../02-molecules/SlidePanel';
-import UserMenu from '../02-molecules/UserMenu';
-import UserNav from '../02-molecules/UserNav';
-import { Menu } from 'lucide-react';
-import Link from 'next/link';
-import { useState } from 'react';
+import Logo from "../01-atoms/Logo";
+import UserBadge from "../01-atoms/UserBadge";
+import AppNav from "../02-molecules/AppNav";
+import SlidePanel from "../02-molecules/SlidePanel";
+import UserNav from "../02-molecules/UserNav";
+import { Menu } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 
 export interface AppNavbarMobileProps {
   user?: {
@@ -24,9 +23,9 @@ const AppNavbarMobile: React.FC<AppNavbarMobileProps> = (props) => {
     setMenuAppOpen(!menuAppOpen);
   };
 
-  const toggleUserMenu = () => {
-    setMenuUserOpen(!menuUserOpen);
-  };
+  // const toggleUserMenu = () => {
+  //   setMenuUserOpen(!menuUserOpen);
+  // };
 
   return (
     <>

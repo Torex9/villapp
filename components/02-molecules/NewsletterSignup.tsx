@@ -10,7 +10,6 @@ export interface NewsletterSignupProps {
   buttonText?: string;
   placeholder?: string;
   buttonColor?: string;
-  buttonHoverColor?: string;
 }
 
 export const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
@@ -20,7 +19,6 @@ export const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
   buttonText = "Get on Track",
   placeholder = "Enter Your Email Address",
   buttonColor = "bg-black hover:bg-gray-800",
-  buttonHoverColor,
 }) => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);

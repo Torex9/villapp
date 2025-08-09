@@ -3,7 +3,6 @@
 import React from "react";
 import { LandingLayout } from "../04-templates/LandingLayout";
 import Image from "next/image";
-import { scrollToElement } from "../../lib/smoothScroll";
 import { aboutUsData, type TeamMember } from "../../data/AboutUsData";
 import { AnimatedCounter } from "../01-atoms/AnimatedCounter";
 import { NewsletterSignup } from "../02-molecules/NewsletterSignup";

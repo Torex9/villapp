@@ -1,25 +1,25 @@
-import { Input as HeadlessInput } from '@headlessui/react';
-import clsx from 'clsx';
-import React, { HTMLInputTypeAttribute } from 'react';
-import InputWrapper, { InputWrapperProps } from '../01-atoms/InputWrapper';
+import { Input as HeadlessInput } from "@headlessui/react";
+import clsx from "clsx";
+import React, { HTMLInputTypeAttribute } from "react";
+import InputWrapper, { InputWrapperProps } from "../01-atoms/InputWrapper";
 
 export type InputProps = InputWrapperProps & {
   type?: HTMLInputTypeAttribute;
   name?: string;
   placeholder?: string;
-  value?: any; // used any as I'm not sure what it should be with the input type being dynamic
+  value?: string | number | readonly string[]; // more specific type for input values
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
   datalistId?: string;
-  datalistOptions?: Array<String>;
+  datalistOptions?: Array<string>; // used lowercase string instead of String
   readonly?: boolean;
   autocomplete?: string;
-}
+};
 
 const Input = ({
   id,
   label,
-  type = 'text',
+  type = "text",
   placeholder,
   required = false,
   value,
@@ -32,7 +32,7 @@ const Input = ({
   datalistOptions,
   readonly = false,
   error,
-  autocomplete
+  autocomplete,
 }: InputProps) => {
   return (
     <InputWrapper
@@ -46,11 +46,11 @@ const Input = ({
     >
       <HeadlessInput
         className={clsx(
-          'w-full overflow-hidden rounded-lg bg-transparent',
-          'placeholder:text-gray-400',
-          'data-[focus]:outline-none data-[focus]:placeholder:text-gray-500',
-          'data-[disabled]:bg-gray-200',
-          icon ? 'py-4 pl-14 pr-4' : 'p-4'
+          "w-full overflow-hidden rounded-lg bg-transparent",
+          "placeholder:text-gray-400",
+          "data-[focus]:outline-none data-[focus]:placeholder:text-gray-500",
+          "data-[disabled]:bg-gray-200",
+          icon ? "py-4 pl-14 pr-4" : "p-4"
         )}
         id={id}
         name={id}

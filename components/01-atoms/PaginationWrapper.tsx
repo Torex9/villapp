@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { getUsers, User, getLength } from '../../data/users';
-import PaginationBody from './PaginationBody';
+import React, { useState } from "react";
+import { getLength } from "../../data/users";
+import PaginationBody from "./PaginationBody";
 
 interface SelectLimitProps {
   onLimitChange: (value: number) => void;
@@ -38,18 +38,18 @@ const PaginationWrapper = () => {
   }
 
   const handlePageChange = (value: number | string) => {
-    if (typeof value === 'string') {
-      if (value === '&laquo;' || value === '... ') {
+    if (typeof value === "string") {
+      if (value === "&laquo;" || value === "... ") {
         setPage(1);
-      } else if (value === '&lsaquo;') {
+      } else if (value === "&lsaquo;") {
         if (page !== 1) {
           setPage(page - 1);
         }
-      } else if (value === '&rsaquo;') {
+      } else if (value === "&rsaquo;") {
         if (page !== totalPage) {
           setPage(page + 1);
         }
-      } else if (value === '&raquo;' || value === ' ...') {
+      } else if (value === "&raquo;" || value === " ...") {
         setPage(totalPage);
       }
     } else {
@@ -62,7 +62,13 @@ const PaginationWrapper = () => {
       {/* <Table users={getUsers(page, limit)} /> */}
       <SelectLimit onLimitChange={setLimit} />
       {/* you can change the number of siblings if you want to  */}
-      <PaginationBody totalpage={totalPage} page={pageNo} limit={limit} siblings={1} onPageChange={handlePageChange} />
+      <PaginationBody
+        totalpage={totalPage}
+        page={pageNo}
+        limit={limit}
+        siblings={1}
+        onPageChange={handlePageChange}
+      />
     </div>
   );
 };

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { InfiniteMovingCards } from "../01-atoms/InfiniteMovingCards";
-import { companies, testimonials } from "@/data/index";
+import { testimonials } from "@/data/index";
 
 const Colleagues = () => {
   const [isPaused, setIsPaused] = useState(false);
